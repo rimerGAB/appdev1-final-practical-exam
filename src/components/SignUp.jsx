@@ -2,6 +2,9 @@ import blossom from '../assets/blossom-flower.svg'
 import googleLogo from '../assets/icons-google-logo.svg'
 import appleLogo from '../assets/icons-apple-logo.svg'
 import styles from './SignUp.module.css'
+import { Input } from './ui/input'
+
+const inputClassName = `${styles.input} focus-visible:ring-0`
 
 export default function SignUp() {
   return (
@@ -12,15 +15,15 @@ export default function SignUp() {
           <form className={styles.form} onSubmit={(event) => event.preventDefault()}>
             <div className={styles.field}>
               <label htmlFor="signup-name">Name</label>
-              <input className={styles.input} id="signup-name" name="name" placeholder="Enter your name" autoComplete="name" required />
+              <Input className={inputClassName} id="signup-name" name="name" placeholder="Enter your name" autoComplete="name" required />
             </div>
             <div className={styles.field}>
               <label htmlFor="signup-email">Email address</label>
-              <input className={styles.input} id="signup-email" name="email" type="email" placeholder="Enter your email" autoComplete="email" required />
+              <Input className={inputClassName} id="signup-email" name="email" type="email" placeholder="Enter your email" autoComplete="email" required />
             </div>
             <div className={styles.field}>
               <label htmlFor="signup-password">Password</label>
-              <input className={styles.input} id="signup-password" name="password" type="password" placeholder="Name" autoComplete="new-password" required />
+              <Input className={inputClassName} id="signup-password" name="password" type="password" placeholder="Name" autoComplete="new-password" required />
             </div>
             <label className={styles.checkbox}>
               <input name="terms" type="checkbox" required />
