@@ -12,22 +12,21 @@ export default function Login() {
           <p className={styles.subtitle}>Enter your Credentials to access your account</p>
           <form className={styles.form} onSubmit={(event) => event.preventDefault()}>
             <div className={styles.field}>
-              <label htmlFor="signup-name">Name</label>
-              <input className={styles.input} id="signup-name" name="name" placeholder="Enter your name" autoComplete="name" required />
+              <label htmlFor="login-email">Email address</label>
+              <input className={styles.input} id="login-email" name="email" type="email" placeholder="Enter your email" autoComplete="email" required />
             </div>
             <div className={styles.field}>
-              <label htmlFor="signup-email">Email address</label>
-              <input className={styles.input} id="signup-email" name="email" type="email" placeholder="Enter your email" autoComplete="email" required />
-            </div>
-            <div className={styles.field}>
-              <label htmlFor="signup-password">Password</label>
-              <input className={styles.input} id="signup-password" name="password" type="password" placeholder="Name" autoComplete="new-password" required />
+              <div className={styles.passwordLabel}>
+                <label htmlFor="login-password">Password</label>
+                <a className={styles.forgotPassword} href="#forgot-password">forgot password</a>
+              </div>
+              <input className={styles.input} id="login-password" name="password" type="password" placeholder="Name" autoComplete="current-password" required />
             </div>
             <label className={styles.checkbox}>
-              <input name="terms" type="checkbox" required />
-              <span>I agree to the <a href="#terms">terms &amp; policy</a></span>
+              <input name="remember" type="checkbox" />
+              <span>Remember for 30 days</span>
             </label>
-            <button className={styles.submit} type="submit">Signup</button>
+            <button className={styles.submit} type="submit">Login</button>
           </form>
           <div className={styles.divider}>
             <span>Or</span>
