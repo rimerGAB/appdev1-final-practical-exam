@@ -2,6 +2,9 @@ import blossom from '../assets/blossom-flower.svg'
 import googleLogo from '../assets/icons-google-logo.svg'
 import appleLogo from '../assets/icons-apple-logo.svg'
 import styles from './Login.module.css'
+import { Input } from './ui/input'
+
+const inputClassName = `${styles.input} focus-visible:ring-0`
 
 export default function Login() {
   return (
@@ -13,14 +16,14 @@ export default function Login() {
           <form className={styles.form} onSubmit={(event) => event.preventDefault()}>
             <div className={styles.field}>
               <label htmlFor="login-email">Email address</label>
-              <input className={styles.input} id="login-email" name="email" type="email" placeholder="Enter your email" autoComplete="email" required />
+              <Input className={inputClassName} id="login-email" name="email" type="email" placeholder="Enter your email" autoComplete="email" required />
             </div>
             <div className={styles.field}>
               <div className={styles.passwordLabel}>
                 <label htmlFor="login-password">Password</label>
                 <a className={styles.forgotPassword} href="#forgot-password">forgot password</a>
               </div>
-              <input className={styles.input} id="login-password" name="password" type="password" placeholder="Name" autoComplete="current-password" required />
+              <Input className={inputClassName} id="login-password" name="password" type="password" placeholder="Name" autoComplete="current-password" required />
             </div>
             <label className={styles.checkbox}>
               <input name="remember" type="checkbox" />
