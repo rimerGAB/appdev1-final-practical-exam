@@ -1,4 +1,6 @@
 import { StrictMode } from 'react'
+import '@fontsource/poppins/latin-500.css'
+import '@fontsource/poppins/latin-700.css'
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.jsx'

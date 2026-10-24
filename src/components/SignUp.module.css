@@ -14,6 +14,7 @@
 }
 
 .content { width: 404px; max-width: 100%; }
+.title { margin: 0; font-size: 32px; font-weight: 500; line-height: 48px; }
 .right { padding-top: 78px; padding-right: 58px; }
 .blossom { display: block; width: 100%; height: auto; aspect-ratio: 828 / 936; }
 

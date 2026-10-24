@@ -5,7 +5,9 @@ export default function SignUp() {
   return (
     <main className={styles.page}>
       <section className={styles.left} aria-label="Sign up">
-        <div className={styles.content} />
+        <div className={styles.content}>
+          <h1 className={styles.title}>Get Started Now</h1>
+        </div>
       </section>
       <section className={styles.right} aria-label="Blossom image">
         <img className={styles.blossom} src={blossom} alt="Yellow and pink blossoms with green leaves" />
