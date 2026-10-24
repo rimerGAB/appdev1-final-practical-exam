@@ -41,7 +41,7 @@ export default function Login() {
               <span>Sign in with Apple</span>
             </button>
           </div>
-          <p className={styles.account}>Have an account? <a href="#login">Sign In</a></p>
+          <p className={styles.account}>Don’t have an account? <a href="#signup">Sign Up</a></p>
         </div>
       </section>
       <section className={styles.right} aria-label="Blossom image">
