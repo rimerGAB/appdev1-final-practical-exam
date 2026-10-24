@@ -1,1 +1,4 @@
 * { box-sizing: border-box; }
+body { margin: 0; color: #000; background: #fff; font-family: 'Poppins', sans-serif; font-weight: 500; }
+button, input { font: inherit; }
+button, a, input[type='checkbox'] { -webkit-tap-highlight-color: transparent; }
